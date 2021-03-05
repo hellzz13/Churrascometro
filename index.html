@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/icon-churras-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Churrascometro</title>
 </head>
 
@@ -13,19 +15,23 @@
     <div class="container">
         <div class="grid1">
             <div class="logo">
-                    <img src="/assets/img/churrascometro_logo.png" alt="churrascometro-logo">
+                <img src="./assets/img/churrascometro_logo.png" alt="churrascometro-logo">
             </div>
-            <h1 class="slogan">A quantidade ideal para 
-                seu churrasco</h1>
-                <img class="cooker" src="/assets/img/homem-churrasco.png" alt="churraqueiro">
+            <div>
+                <h1 class="slogan">A quantidade ideal para seu churrasco</h1>
+                <img class="cooker" src="./assets/img/homem-churrasco.png" alt="churraqueiro">
+            </div>
+            <div class="banner-arrow">
+                <i class="material-icons">keyboard_arrow_down</i>
+            </div>
         </div>
         <div class="grid2">
             <section class="calcBox">
-                <h1>Churrascometro</h1>
+                <h1>CALCULE AQUI</h1>
                 <input id="adultos" name="adultos" type="number" placeholder="Adultos">
                 <input id="criancas" name="criancas" type="number" placeholder="Crianças">
                 <input id="duracao" name="duracao" type="number" placeholder="Duração">
-                <button onclick="calcular()">Calcular</button>
+                <button class="bt-black" onclick="calcular()">Calcular</button>
 
                 <div id="resultado">
 

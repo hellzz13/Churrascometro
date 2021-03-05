@@ -10,27 +10,18 @@ body{
   }
 
 .grid1{
-    /* display: block; */
     margin: 0px;
     height: 100vh;
-    /* width: 100vh; */
-    /* border: solid red 1px; */
     text-align: center;
     width: calc((100% / 2) - 0.3rem); /* divide a tela e da o desconto */
 
 }
 
 .grid2{
-    /* display:block; */
     margin: 0px;
     height: 100vh;
-    /* width: 90vh; */
-    /* border: solid red 1px; */
     background-color: #A12A2A;
     border-radius: 30px 0px 0px 30px;
-    
-    /* position: relative; */
-    /* right: 0px; */
     width: calc((100% / 2) - 0.3rem); /* divide a tela e da o desconto */
     
 
@@ -46,7 +37,21 @@ body{
     width: 80%;;
 }
 .cooker{
-    width: 90%;
+    max-width: 90%;
+}
+.banner-arrow{
+    margin-top: 50px;
+}
+.banner-arrow .material-icons{
+    font-size: 40px;
+    /* animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: bounce; */
 }
 .calcBox{
     font-family: Arial, Helvetica, sans-serif;
@@ -58,15 +63,42 @@ body{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    box-shadow: 10px 5px 5px  rgba(0, 0, 0, 30%);
+}
+.calcBox h1, h2{
+    text-align: center;
 }
 
 
 input{
     width: 100%;
+    height: 40px;
+    border: none;
     display: block;
     padding: 5px;
     box-sizing: border-box;
     margin-bottom: 10px;
+}
+.bt-black{
+    margin-top: 5px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+
+    border-radius: 20px;
+    width: 100%;
+    height: 36px;
+    background-color: black;
+    color: white;
+}
+#resultado p{
+    margin-left: 10px;
+    
+}
+#resultado img{
+    width: 40px;
+    vertical-align: middle;
 }
 
 /* mobile */
@@ -76,6 +108,6 @@ input{
     }
     .grid2{
         width: 100%;
-        border-radius: 30px 30px 0px 0px;
+        border-radius: 20px 20px 0px 0px;
     }
 }

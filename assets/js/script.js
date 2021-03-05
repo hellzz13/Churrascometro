@@ -15,13 +15,11 @@ function calcular() {
     let qtdTotalCerveja = cervejaPessoa(duracao) * adultos;
     let qtdTotalBebida = bebidaPessoa(duracao) * adultos + (bebidaPessoa(duracao) / 2 * criancas);
 
-    // console.log(qtdTotalCarne);
-    // console.log(qtdTotalCerveja);
-    // console.log(qtdTotalBebida);
-
-    resultado.innerHTML = `<p>${qtdTotalCarne / 1000}kg de carne`;
-    resultado.innerHTML += `<p>${Math.ceil(qtdTotalCerveja / 350)} latas de cerveja`;
-    resultado.innerHTML += `<p>${Math.ceil(qtdTotalBebida / 2000)} garrafas de 2l de bebida`;
+    //insere e imprime resultado na pagina
+    resultado.innerHTML = `<h2> VOCÊ PRECISA: </h2>`;
+    resultado.innerHTML += `<p><img src="../assets/img/carne.png"> ${qtdTotalCarne / 1000}kg de carne </p>`;
+    resultado.innerHTML += `<p><img src="../assets/img/cerveja.png"> ${Math.ceil(qtdTotalCerveja / 350)} latas de cerveja </p>`;
+    resultado.innerHTML += `<p><img src="../assets/img/garrafa.png"> ${Math.ceil(qtdTotalBebida / 2000)} garrafas de 2l de bebida </p>`;
 }
 
 function carnePessoa(duracao){
